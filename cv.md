@@ -57,5 +57,5 @@ var strStr = function(haystack, needle){
 ## Experience
 
 
-## Langueges
+## Languages
 English - A2
