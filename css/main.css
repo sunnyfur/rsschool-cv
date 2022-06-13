@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url(/assets/fonts/Merriweather/Merriweather-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url(/assets/fonts/Merriweather/Merriweather-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text_color {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #f27a54 33%, #a154f2);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 15px;
+}
+
+.theme-light .text_color ::selection {
+  color: #30363d;
+  background-color: #cbcfd4;
+}
+
+.theme-dark .text_color ::selection {
+  color: #30363d;
+  background-color: #cbcfd4;
+}
+
+.text_h1 {
+  font-family: "Merriweather", Arial, serif;
+  font-weight: 400;
+  font-size: 52px;
+  margin: 15px;
+}
+
+.text_h2 {
+  font-family: "Merriweather", Arial, serif;
+  font-weight: 400;
+  font-size: 44px;
+  margin: 15px;
+  color: #f27a54;
+}
+
+.text_h3 {
+  font-family: "Merriweather", Arial, serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 15px;
+}
+
+.text_h4 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 15px;
+}
+
+.text_h5 {
+  font-family: "Merriweather", Arial, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  margin: 15px;
+}
+
+.text_common {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 15px;
+}
+
+.text_label {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.text_menu {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 15px 0;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.theme-light .text_menu {
+  color: #3c444c;
+}
+
+.theme-dark .text_menu {
+  color: #cbcfd4;
+}
+
+.text_menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(45deg, #f27a54 33%, #a154f2);
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.theme-light .text_menu:hover {
+  color: #f27a54;
+}
+
+.theme-dark .text_menu:hover {
+  color: white;
+}
+
+.text_menu:hover::after, .text_menu:focus::after {
+  width: 100%;
+}
+
+.theme-light ::selection {
+  color: #30363d;
+  background-color: #cbcfd4;
+}
+
+.theme-dark ::selection {
+  color: #30363d;
+  background-color: #cbcfd4;
+}
+
+.container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme-light .container {
+  color: #30363d;
+  background-color: white;
+}
+
+.theme-dark .container {
+  color: white;
+  background-color: #30363d;
+}
+
+.container_standart {
+  min-width: 80vw;
+  max-width: 1440px;
+}
+
+.container_header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-light .container_header {
+  background: white;
+}
+
+.theme-dark .container_header {
+  background: #30363d;
+}
+
+.container_block {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 2px;
+  padding: 50px;
+}
+
+.theme-light .container_block {
+  background: white;
+}
+
+.theme-dark .container_block {
+  background: linear-gradient(50deg, rgba(60, 68, 76, 0), #3c444c);
+}
+
+.container_shadow {
+  min-height: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.theme-light .container_shadow {
+  background-color: #e2e5e8;
+}
+
+.theme-dark .container_shadow {
+  background-color: #3c444c;
+}
+
+.section_about {
+  margin-top: 150px;
+}
+
+.theme-light .section_about {
+  background: white;
+}
+
+.theme-dark .section_about {
+  background: linear-gradient(50deg, rgba(60, 68, 76, 0), #3c444c);
+}
+
+.container_footer {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  align-content: center;
+  padding: 0;
+}
+
+.logo_rs {
+  width: 150px;
+}
+
+.theme-dark .logo_rs,
+.theme-dark .logo_git {
+  filter: invert(100%);
+}
+
+.logo_git {
+  width: 50px;
+}
+
+.link_rs {
+  margin-left: auto;
+}
+
+.container_footer :first-child {
+  margin-left: 50px;
+}
+
+.container_footer :last-child {
+  margin-right: 50px;
+}
+/*# sourceMappingURL=main.css.map */
