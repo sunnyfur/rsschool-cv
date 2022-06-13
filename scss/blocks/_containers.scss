@@ -63,8 +63,6 @@
   }
   padding: $gap;
 }
-.section_common {
-}
 
 .section_about {
   @include themify($themes) {
