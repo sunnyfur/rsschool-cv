@@ -6,10 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#id-contacts">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#id-summary">Summary</a>
+                    </li>
+                    <li>
+                        <a href="#id-skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#id-code">Code</a>
+                    </li>
+                    <li>
+                        <a href="#id-projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#id-languages">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
+            <section class="about">
+                <h1>Polina Makarova</h1>
+                <h2>Front-End Developer</h2>
+                <img src="#" alt="photo" />
+            </section>
+            <section id="id-contacts" class="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>+7-912-885-36-22</li>
+                    <li>polin.makarova@mail.ru</li>
+                    <li>@polin_makarova </li>
+                    <li>sunnyfur</li>
+                </ul>
+            </section>
+            <section id="id-summary" class="summary">
+                <h2>Summary</h2>
+                <p>Currently, my job is connecting to automation of routine tasks in CAD and Microsoft Office systems. I
+                    always like the visual aspect of products so I decided to try myself in frontend.
+                    I love to learn something new and solve various difficult tasks.
+                    I would like to improve my programming knowledge and skills to become a good frontend developer.
+                </p>
+            </section>
+            <section id="id-skills" class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Html, CSS, Sass</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>C#, NET</li>
+                    <li>Figma, Adobe Photoshop, InDesign</li>
+                </ul>
+            </section>
+            <section id="id-code" class="code">
+                <h2>Code example</h2>
+                <a href="https://leetcode.com/problems/implement-strstr">from LEETCODE:</a>
+                <p>Given two strings needle and haystack, return the index of the first occurrence of needle in
+                    haystack, or -1 if needle is not part of haystack.</p>
+                <pre>
+                    <code>
+const strStr = (haystack, needle)=>{
+if (!needle) return 0;
+    for (let i=0; i&lt;haystack.length; i++){
+        if (haystack[i] == needle[0]){
+            let found=true;
+            for (let j=1; j&lt;needle.length; j++){
+                if (i+j>=haystack.length || haystack[i+j]!=needle[j]){
+                    found=false;
+                    break;
+                } 
+            }
+            if (found) return i;
+        }
+    }
+    return -1;    
+};
+                    </code>
+                </pre>
+            </section>
+            <section id="id-progects" class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="https://sunnyfur.github.io/FurnitureShop/">Furniture Shop</a></li>
+                </ul>
+            </section>
+            <section id="id-education" class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><span>Perm State University</span>
+                        <p>Applied Mathematics and Computer Science</p>
+                    </li>
+                    <li><span>Higher School of Economics</span>
+                        <p>Object-oriented programming</p>
+                    </li>
+                    <li><span><a href="https://itgirlschool.com/">ItGirlsSchool</a></span>
+                        <p>FrontEnd Developer</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="id-languages" class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Russian - native speaker</li>
+                    <li>English - A2 (B1 in process)</li>
+                </ul>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy;2022 Polina Makarova</p>
+
+            <a>Git</a>
+
+            <a href=""></a>
+        </footer>
+    </div>
 </body>
 
 </html>
