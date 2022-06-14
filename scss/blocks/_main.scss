@@ -13,5 +13,5 @@
 .photo_border {
   border-radius: 25%;
   object-fit: cover;
-  background-image: url("/assets/images/avatar2.png"), $acent-gradient;
+  background-image: url("./../assets/images/avatar2.png"), $acent-gradient;
 }
