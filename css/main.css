@@ -352,6 +352,6 @@
 .photo_border {
   border-radius: 25%;
   object-fit: cover;
-  background-image: url("/assets/images/avatar2.png"), linear-gradient(45deg, #f27a54 33%, #a154f2);
+  background-image: url("./../assets/images/avatar2.png"), linear-gradient(45deg, #f27a54 33%, #a154f2);
 }
 /*# sourceMappingURL=main.css.map */
