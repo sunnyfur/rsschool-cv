@@ -3,28 +3,20 @@
     color: themed("selectionColor");
     background-color: themed("selectionBackground");
   }
-
-  // background-color: $color-light;
-  // color: $color-dark;
 }
-// * {
-//   border: red 1px solid;
-// }
+
 .container {
   @include themify($themes) {
     color: themed("textColor");
     background-color: themed("backgroundColor");
   }
 
-  font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  //   padding-top: $gap;
 }
 
 .container_standart {
-  // height: 60vh;
   min-width: 80vw;
   max-width: 1440px;
 }
@@ -39,6 +31,8 @@
   border-radius: 2px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .container_block {
@@ -69,12 +63,14 @@
     background: themed("cardBackground");
   }
   margin-top: 150px;
-  // background: $grey-gradient;
-
-  //   border: red 1px solid;
+  display: flex;
+  justify-content: space-around;
+  gap: $gap;
+  align-items: center;
 }
 .container_footer {
   display: flex;
   align-items: center;
-  padding: $gap 0;
+  padding: 15px 0;
+  justify-content: space-between;
 }

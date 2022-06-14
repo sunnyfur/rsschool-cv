@@ -1,7 +1,7 @@
 .text_color {
   font-family: $font_para;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 54px;
   text-transform: uppercase;
   background: $acent-gradient;
   -webkit-background-clip: text;
@@ -58,6 +58,16 @@
   font-weight: 400;
   font-size: 24px;
   margin: $min-gap;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.text_common_italic {
+  font-family: $font_para;
+  font-weight: 400;
+  font-size: 24px;
+  margin: $min-gap;
+  font-style: italic;
 }
 
 .text_label {
@@ -70,6 +80,7 @@
 
 .text_menu {
   text-decoration: none;
+  font-style: italic;
 
   @include themify($themes) {
     color: themed("linkColor");
@@ -106,4 +117,49 @@
   &:focus::after {
     width: 100%;
   }
+}
+
+.text_link {
+  text-decoration: none;
+
+  @include themify($themes) {
+    color: themed("linkColor");
+  }
+
+  text-transform: uppercase;
+  font-family: $font_para;
+  font-size: 24px;
+
+  position: relative;
+
+  transition: all 0.4s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    background: $acent-gradient;
+    width: 0;
+    left: 0;
+    bottom: -20%;
+    transform: translateX(0);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+
+  &:hover {
+    @include themify($themes) {
+      color: themed("linkColorHover");
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+.text_code {
+  // font-size: 20px;
+  white-space: pre-wrap;
+  line-height: 50%;
 }

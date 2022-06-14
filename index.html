@@ -16,9 +16,7 @@
         <header class=" container_header">
             <nav class=" container_standart">
                 <ul class="nav__list">
-                    <li>
-                        <a href="#id-contacts" class="text_menu">Contacts</a>
-                    </li>
+
                     <li>
                         <a href="#id-summary" class="text_menu">Summary</a>
                     </li>
@@ -34,39 +32,37 @@
                     <li>
                         <a href="#id-languages" class="text_menu">Languages</a>
                     </li>
+                    <li>
+                        <a href="#id-contacts" class="text_menu">Contacts</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main class="container_standart">
             <section class="container_block section_about">
-                <h1 class="text_h1">Polina Makarova</h1>
-                <span class="text_color">Front-End Developer</span>
+                <div>
+                    <h1 class="text_h1">Polina Makarova</h1>
+                    <span class="text_color">Front-End Developer</span>
+                </div>
                 <div class="photo photo_border">
-                    <!-- <img src="assets/images/avatar.jpg" alt="photo" class="photo" /> -->
+
 
                 </div>
             </section>
-            <section id="id-contacts" class="container_shadow contacts">
-                <h2 class="text_h2">Contacts</h2>
-                <ul>
-                    <li>+7-912-885-36-22</li>
-                    <li>polin.makarova@mail.ru</li>
-                    <li>@polin_makarova </li>
-                    <li>sunnyfur</li>
-                </ul>
-            </section>
             <section id="id-summary" class="container_shadow summary">
                 <h2 class="text_h2">Summary</h2>
-                <p>Currently, my job is connecting to automation of routine tasks in CAD and Microsoft Office systems. I
-                    always like the visual aspect of products so I decided to try myself in frontend.
+                <p class="text_common">Currently, my job is connecting to automation of routine tasks in CAD and
+                    Microsoft Office systems.
+                    I always like the visual aspect of products so I decided to try myself in frontend.</p>
+                <p class="text_common">
                     I love to learn something new and solve various difficult tasks.
                     I would like to improve my programming knowledge and skills to become a good frontend developer.
                 </p>
             </section>
             <section id="id-skills" class="container_shadow skills">
                 <h2 class="text_h2">Skills</h2>
-                <ul>
+                <ul class="text_common">
                     <li>Html, CSS, Sass</li>
                     <li>JavaScript</li>
                     <li>React</li>
@@ -74,13 +70,17 @@
                     <li>Figma, Adobe Photoshop, InDesign</li>
                 </ul>
             </section>
+
+
+
             <section id="id-code" class="container_shadow code">
                 <h2 class="text_h2">Code example</h2>
-                <a href="https://leetcode.com/problems/implement-strstr">from LEETCODE:</a>
-                <p>Given two strings needle and haystack, return the index of the first occurrence of needle in
+                <a class="text_link" href="https://leetcode.com/problems/implement-strstr">from LEETCODE:</a>
+                <p class="text_common">Given two strings needle and haystack, return the index of the first occurrence
+                    of needle in
                     haystack, or -1 if needle is not part of haystack.</p>
                 <pre>
-                    <code>
+                    <code class="text_code">
 const strStr = (haystack, needle)=>{
 if (!needle) return 0;
     for (let i=0; i&lt;haystack.length; i++){
@@ -102,41 +102,52 @@ if (!needle) return 0;
             </section>
             <section id="id-progects" class="container_shadow projects">
                 <h2 class="text_h2">Projects</h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href="https://sunnyfur.github.io/FurnitureShop/">Furniture Shop</a></li>
+                <ul class="text_common">
+
+                    <li><a class="text_link " href="https://sunnyfur.github.io/Marvel/" target="_blank">Marvel</a></li>
+                    <li><a class="text_link " href="https://sunnyfur.github.io/FurnitureShop/" target="_blank">Furniture
+                            Shop</a></li>
                 </ul>
             </section>
             <section id="id-education" class="container_shadow education">
                 <h2 class="text_h2">Education</h2>
-                <ul>
+                <ul class="text_common">
                     <li><span>Perm State University</span>
                         <p>Applied Mathematics and Computer Science</p>
                     </li>
                     <li><span>Higher School of Economics</span>
                         <p>Object-oriented programming</p>
                     </li>
-                    <li><span><a href="https://itgirlschool.com/">ItGirlsSchool</a></span>
+                    <li><span><a class="text_link" href="https://itgirlschool.com/">ItGirlsSchool</a></span>
                         <p>FrontEnd Developer</p>
                     </li>
                 </ul>
             </section>
             <section id="id-languages" class="container_shadow languages">
                 <h2 class="text_h2">Languages</h2>
-                <ul>
+                <ul class="text_common">
                     <li>Russian - native speaker</li>
                     <li>English - A2 (B1 in process)</li>
                 </ul>
             </section>
 
+
         </main>
         <footer class="container_standart container_shadow container_footer">
+            <ul class="text_common contacts" id="id-contacts">
+                <li>+7-912-885-36-22</li>
+                <li>polin.makarova@mail.ru</li>
+                <li>@polin_makarova </li>
+                <li> <a class="text_link" href="https://github.com/sunnyfur" target="_blank"><img
+                            src="assets/icons/GitHub-Mark-64px.png" alt="git" class="logo_git">
+                        <span>sunnyfur</span>
+                    </a></li>
+            </ul>
 
 
-            <a href="https://github.com/sunnyfur" target="_blank"><img src="assets/icons/GitHub-Mark-64px.png" alt="git"
-                    class="logo_git"></a>
-            <p class="text_common">&copy;2022 Polina Makarova</p>
+            <p class="text_common_italic">&copy;2022 Polina Makarova</p>
+
+
             <a href="https://rs.school/js/" target="_blank" class="link_rs">
                 <img src="assets/icons/rs_school_js.svg" alt="rs-school-logo" class="logo_rs" />
             </a>

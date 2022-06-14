@@ -7,15 +7,18 @@
 }
 
 .logo_git {
-  width: 50px;
-}
-.link_rs {
-  margin-left: auto;
+  height: 30px;
+  margin: 0 20px 0 0;
 }
 
-.container_footer :first-child {
-  margin-left: $gap;
-}
-.container_footer :last-child {
+.container_footer > :last-child {
   margin-right: $gap;
+}
+
+.contacts {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
 }
